@@ -32,10 +32,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.adrikhamid.consumerestapi.ui.home.viewmodel.HomeViewModel
 import com.adrikhamid.consumerestapi.ui.home.viewmodel.KontakUIState
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.adrikhamid.consumerestapi.ui.PenyediaViewModel
 
 @Composable
-fun HomeScreen(){
+fun HomeScreen(
+    navigateToItemEntry:()->Unit,
+    modifier: Modifier = Modifier,
+    onDetailClick: (Int) -> Unit = {},
+    viewModel: HomeViewModel = viewModel(factory = PenyediaViewModel.Factory)
+){
 
 }
 @Composable
