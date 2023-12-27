@@ -24,3 +24,10 @@ fun InsertUiEvent.toKontak(): Kontak = Kontak(
     alamat = alamat,
     nohp = nohp
 )
+
+fun Kontak.toInsertUiEvent(): InsertUiEvent = InsertUiEvent(
+    id = id,
+    nama = nama,
+    alamat = alamat,
+    nohp = nohp
+)
