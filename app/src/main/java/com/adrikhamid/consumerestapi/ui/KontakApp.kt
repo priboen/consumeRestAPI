@@ -22,6 +22,17 @@ import com.adrikhamid.consumerestapi.ui.home.viewmodel.HomeViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
+fun TopAppBarKontak(
+    title: String,
+    modifier: Modifier,
+    scrollBehavior: TopAppBarScrollBehavior?=null,
+    navigateUp:()->Unit={}
+
+){
+
+}
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
 fun KontakApp(
     homeViewModel: HomeViewModel = viewModel(factory = PenyediaViewModel.Factory)
 
