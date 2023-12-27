@@ -1,4 +1,4 @@
-package com.adrikhamid.consumerestapi.ui.viewmodel
+package com.adrikhamid.consumerestapi.kontak.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.adrikhamid.consumerestapi.model.Kontak
