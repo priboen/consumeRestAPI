@@ -26,7 +26,7 @@ class HomeViewModel(private val kontakRepository: KontakRepository) : ViewModel(
         getKontak()
     }
 
-     fun getKontak() {
+    fun getKontak() {
         viewModelScope.launch {
             kontakUIState = KontakUIState.Loading
             kontakUIState = try {
@@ -38,8 +38,16 @@ class HomeViewModel(private val kontakRepository: KontakRepository) : ViewModel(
             }
         }
     }
-    
-    fun deleteKontak(id:Int){
 
+    fun deleteKontak(id: Int) {
+        viewModelScope.launch {
+            try {
+                kontakRepository.deleteKontak(id)
+            } catch (e: IOException){
+                KontakUIState.Error
+            } catch (e:HttpException){
+                KontakUIState.Error
+            }
+        }
     }
 }
