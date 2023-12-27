@@ -24,13 +24,15 @@ import com.adrikhamid.consumerestapi.ui.home.viewmodel.HomeViewModel
 @Composable
 fun TopAppBarKontak(
     title: String,
+    canNavigateBack: Boolean,
     modifier: Modifier,
-    scrollBehavior: TopAppBarScrollBehavior?=null,
-    navigateUp:()->Unit={}
+    scrollBehavior: TopAppBarScrollBehavior? = null,
+    navigateUp: () -> Unit = {}
 
-){
+) {
 
 }
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun KontakApp(
