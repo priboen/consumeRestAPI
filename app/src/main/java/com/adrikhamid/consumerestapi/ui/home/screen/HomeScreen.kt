@@ -34,7 +34,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.adrikhamid.consumerestapi.ui.home.viewmodel.KontakUIState
 
+@Composable
+fun HomeScreen(){
 
+}
 @Composable
 fun HomeStatus(
     kontakUIState: KontakUIState,
