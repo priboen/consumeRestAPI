@@ -29,7 +29,7 @@ import com.adrikhamid.consumerestapi.ui.home.viewmodel.HomeViewModel
 fun TopAppBarKontak(
     title: String,
     canNavigateBack: Boolean,
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     scrollBehavior: TopAppBarScrollBehavior? = null,
     navigateUp: () -> Unit = {}
 
